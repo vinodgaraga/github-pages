@@ -1,0 +1,21 @@
+	1. %!grep "Path" = it will search"Path" entire line printed
+	2. :%s/Path/RK/g =replace one word another
+	3. :g:Groups:d =the word in Groups deleted
+	4. :%s/$/vinod/ =vinod word added in last all the lines
+	(or)
+	:%s,$, > start_points_65_paths.rpt,g
+	
+	5. :%s/^/vinod / =vinod word added in first of all the lines
+	(Or)
+	:%s,^,report_timing -from ,g 
+	
+	6. :%s/$/\r =each line by line space b/w them
+	7. :%!awk '{print $1}' =its prints the entire file first record
+	8. :%s, ,\r,g  = it will print endpoint to a new line
+	
+   9 :%s/ /\r
+ 10.  :vg/Beginpoint\|Endpoint/d =except Begni Point and End point all are deleted
+	11. :g/Arrival/d
+
+	
+	
